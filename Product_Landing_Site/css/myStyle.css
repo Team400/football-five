@@ -1,0 +1,145 @@
+body{
+    background-color: #89CFF0;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2, 
+h3{
+    text-decoration: underline;
+}
+
+ul{
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#devTeam{
+    padding-top: 100px;
+}
+
+#ethan,
+#andrew,
+#carl,
+#ash{
+    border-style: solid;
+    border-bottom: none;
+}
+
+#ethan,
+#ash{
+    display: grid;
+    grid-template-columns: auto, auto;
+    font-size: large;
+    border-color: #89CFF0;
+    border-width: 20px;
+    background-color: #282828;
+    color: white
+}
+
+#carl,
+#andrew,
+#larry{
+    display: grid;
+    grid-template-columns: auto, auto;
+    font-size: large;
+    border-color: #89CFF0;
+    border-width: 20px;
+    background-color: #383838;
+    color: white
+}
+
+#carlBio,
+#ethanBio,
+#andrewBio,
+#ashBio,
+#larryBio{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#name{
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+#ethan{
+    grid-template-areas: 
+            "ethanPic ."
+            "ethanPic ethanBio"
+            "ethanPic .";
+    border-bottom: none;
+}
+#ethanPic{
+    grid-area: ethanPic;
+}
+#ethanBio{
+    grid-area: ethanBio;
+}
+
+
+#andrew{
+    grid-template-areas: 
+            ". andrewPic"
+            "andrewBio andrewPic"
+            ". andrewPic";
+    border-bottom: none;
+}
+#andrewPic{
+    grid-area: andrewPic;
+}
+#andrewBio{
+    grid-area: andrewBio;
+}
+
+
+#carl{
+    grid-template-areas: 
+            ". carlPic"
+            "carlBio carlPic"
+            ". carlPic";
+    border-bottom: none;
+}
+#carlPic{
+    grid-area: carlPic;
+}
+#carlBio{
+    grid-area: carlBio;
+}
+
+
+#ash{
+    grid-template-areas: 
+            "ashPic ."
+            "ashPic ashBio"
+            "ashPic .";
+    border-bottom: none;
+}
+#ashleighPic{
+    grid-area: ashPic;
+}
+#ashleighBio{
+    grid-area: ashBio;
+}
+
+
+#larry{
+    grid-template-areas: 
+            ". larryPic"
+            "larryBio larryPic"
+            ". larryPic";
+    border-style: solid;
+}
+#larryPic{
+    grid-area: larryPic;
+}
+#larryBio{
+    grid-area: larryBio;
+}
