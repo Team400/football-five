@@ -1,8 +1,11 @@
 # football-five
 
-Project Team 400
+## Project Team 400
 
-Part One:
+### Part One:
+
+#### Example paragraph
+Our product is a fantasy sports app for college football.  We considered several possible names including (...), but eventually settle on (new name).  The potential users of the product are college football fans. . . 
 
 1. What is the product?
 
@@ -30,14 +33,4 @@ d. Commissioners (the person who runs the league) can create a lottery option fo
 
 5. Product Vision Statement:
 
-i. FOR avid college football fanatics
-
-ii. WHO wants a competitive experience with friends through the fantasy sports realm
-
-iii. The FantasyMax App is a web-based gaming service
-
-iv. THAT allows users the same luxuries of fantasy NFL but on the college level along with various custom options available
-
-v. UNLIKE other fantasy sports applications
-
-vi. OUR PRODUCT allows users to enjoy the fantasy football experience on the college level while being customizable from draft selection to text formatting on each user’s screen
+**FOR** avid college football fanatics **WHO** want a competitive experience with friends through the fantasy sports realm the **FantasyMax App** is a web-based gaming service **THAT** allows users the same luxuries of fantasy NFL but on the college level along with various custom options available **UNLIKE** other fantasy sports applications **OUR PRODUCT** allows users to enjoy the fantasy football experience on the college level while being customizable from draft selection to text formatting on each user’s screen.
