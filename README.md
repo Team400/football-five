@@ -1,36 +1,19 @@
-# football-five
+# Project Team400
 
-## Project Team 400
+## Part One:
 
-### Part One:
+Our product is a fantasy sports app for college football.  We considered several possible names for the app including NoProFootball, NoProGridiron, FantasyMax, CampusMax and PigskinCampus. We eventually settled on FantasyMAX because it sparks the imagination.
 
-#### Example paragraph
-Our product is a fantasy sports app for college football.  We considered several possible names including (...), but eventually settle on (new name).  The potential users of the product are college football fans. . . 
+Among the potential users of the product will be college football fans who enjoy following teams and players with greater focus and intensity than the casual observer, and particularly those who want to up their stake by taking on the challenge of creating and managing their own team. In addition, we anticipate that colleges and universities will incorporate the app into their marketing programs to generate interest in their teams and thus increase revenues. Finally, the app will promote competition between users, including financial incentives where gambling is legal. The prospect of gambling will be an added enticement to professional and amateur gamblers alike.
 
-1. What is the product?
+Users of the app become "team managers." College football teams are created in a formal draft at the beginning of each season. Team managers may participate in the draft by selecting, in turn, from the list of remaining players, or a manager may elect to have their team created for them in an auto-draft. Auto-draft means simply that when it is the manager's turn to choose, a player will be selected for them from a ranked "wish-list" provided in advance by the manager. 
 
-a. Fantasy College Football App
+Individuals may participate either alone or as a member of a group - the app will promote social engagement by the optional formation of groups where the individual group members compete among themselves or where the group fields one team to represent all.
 
-2. What are possible names of the product
+One or more commissioners will be responsible for administering the league and tallying results which will be published on the app weekly. Commissioners can create an option for team managers to be selected by lottery, similar to drafts for professional fantasy sports. 
 
-a. FantasyMax
+For managers who choose to gamble, there will be three ways to provide funds for betting: credit card, digital money transfer, and cryptocurrency. It is also anticipated that there will be "off-app" competitions, with and without betting, between individuals and/or members of a group.
 
-3. Who are the potential customers, end users or buyers
+### Product Vision Statement:
 
-a. End Users: College football fans
-
-b. Buyers: NCAA College Football stakeholders (colleges, commissioners of the conferences, and the front office of the NCAA)
-
-4. What are the potential features, functions, or other important details that would be appealing to customers, end users, or buyers.
-
-a. Convenient for the fans who might gamble: three ways of taking bets (credit, digital money transfer, and cryptocurrency)
-
-b. Two options available to “team owners” (the end users) when drafting players: auto-draft (your team is created for you based on wish list or availability) or classic (follow along and select every time it’s your turn)
-
-c. User interface will be legible with options available to the user to change fonts, font styles and sizes.
-
-d. Commissioners (the person who runs the league) can create a lottery option for team owners to be randomly selected by lottery, similar to professional sports drafts
-
-5. Product Vision Statement:
-
-**FOR** avid college football fanatics **WHO** want a competitive experience with friends through the fantasy sports realm the **FantasyMax App** is a web-based gaming service **THAT** allows users the same luxuries of fantasy NFL but on the college level along with various custom options available **UNLIKE** other fantasy sports applications **OUR PRODUCT** allows users to enjoy the fantasy football experience on the college level while being customizable from draft selection to text formatting on each user’s screen.
+**FOR** college football fans **WHO** want a competitive experience within the fantasy sports realm, **...** is a fantasy sports app **THAT** allows users to participate in college football as a team manager. **UNLIKE** other football fantasy sports applications, **OUR PRODUCT** allows users to enjoy the fantasy football experience at the college level, instead of being confined to the NFL.
