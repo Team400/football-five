@@ -16,4 +16,4 @@ For managers who choose to gamble, there will be three ways to provide funds for
 
 ### Product Vision Statement:
 
-**FOR** college football fans **WHO** want a competitive experience within the fantasy sports realm, **...** is a fantasy sports app **THAT** allows users to participate in college football as a team manager. **UNLIKE** other football fantasy sports applications, **OUR PRODUCT** allows users to enjoy the fantasy football experience at the college level, instead of being confined to the NFL.
+**FOR** college football fans **WHO** want a competitive experience within the fantasy sports realm, **FantasyMAX** is a fantasy sports app **THAT** allows users to participate in college football as a team manager. **UNLIKE** other football fantasy sports applications, **OUR PRODUCT** allows users to enjoy the fantasy football experience at the college level, instead of being confined to the NFL.
