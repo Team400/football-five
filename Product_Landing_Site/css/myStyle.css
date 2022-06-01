@@ -1,20 +1,16 @@
-body{
-      
+#wrapper{
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-size: x-large;
     background-color:  rgb(30,144,255);
-
-    
 }
 
 h1{
     font-size: 50px;
-}
-
-h2, 
-h3{
-  
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px black;
 }
 
 ul{
@@ -26,6 +22,13 @@ ul{
 
 #devTeam{
     padding-top: 100px;
+}
+
+
+
+#part2{
+    text-align: center;
+    width: 100%;
 }
 
 #ethan,
@@ -44,7 +47,6 @@ ul{
     border-color: rgb(30,144,255);
     border-width: 20px;
     background-color: #383838;
-    color: white
 }
 
 #carl,
@@ -56,7 +58,6 @@ ul{
     border-color: rgb(30,144,255);
     border-width: 20px;
     background-color: #383838;
-    color: white
 }
 
 #carlBio,
@@ -147,13 +148,10 @@ ul{
     grid-area: larryBio;
 }
 
-
 #Home{
-    color:  #383838;
     font-weight: bold;
 }
 #Interviews{
-    color:  #383838;
     font-weight: bold;
 }
 
@@ -163,133 +161,133 @@ ul{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         padding-top: 1%;
     padding-bottom: 1%;
+    font-size: larger;
+    height: 250px;
+    max-width: 100%;
+    border: solid white 2px;
+    border-top: none;
+
 }
 .col-8{
    display: flex;
    justify-content: center;
    align-items: center;
+   text-align: center;
    background-color:  #383838;
-   color: white;
    padding: 5%;
-    
-}
-#rightSide{
-    border-left:solid 10px rgb(28,28,240)
-}
-
-
-#leftSide{
-    border-right:solid 10px rgb(28,28,240)
-}
-
-#part2{
-
-    border-color:rgb(30,144,255) ;
-    background-color:rgb(30,144,255) ;
-    color: white
-}
-
-.headercontainer{
-
-    background-color: rgb(30,144,255);
-    
-}
-
-#slogancontainer{
-    background-color:rgb(30,144,255);
-    color: white ;
-    border-right: solid 10px rgb(28,28,240);
-    border-left: solid 10px rgb(28,28,240);
-
-    display: flex;
-   justify-content: center;
-   align-items: center;
-    padding: 3%;
-    min-height: 250px;
-
-}
-#SloganTitle{
-    padding-right:5%;
-    font: size 25px; 
-
-}
-
-#slogan{
-    padding: 3%;
-    border-right: solid 10px rgb(28,28,240);
-    min-width: 14%;
-}
-
-#productvision{
-    padding: 3%;
-}
-#productvisiontitle{
-    padding: 3%;
-}
-
-#Feature1{
-    background-color: rgb(30,144,255);
-    display: flex;
-   height: 100px;
+   font-size: x-large;
+   height: 250px;
+   max-width: 100%;
+   border: solid white 2px;
    border-top: none;
 }
 
-#Feature2{
-    background-color: rgb(30,144,255);
-    display: flex;
-    height: 100px;
+#rightSide,
+#rightSideTop{
+    border-left: none;
+    border-bottom: solid white 2px;
 }
 
-#Feature3{
-    background-color: rgb(30,144,255);
-    display: flex;
-    height: 100px;
+#leftSide{
+    border-right:none;
+    border-bottom: solid white 2px;
 }
 
-#Feature4{
-    background-color: rgb(30,144,255);
-    display: flex;
-    height: 120px;
+#leftSideTop,
+#rightSideTop{
+    border-top: solid white 2px;
 }
 
-#Feature5{
-    background-color: rgb(30,144,255);
+#leftSideBottom,
+#rightSideBottom{
+    border: solid white 2px;
+    border-top: none;
+}
+
+#leftSideBottom{
+    border-right: none;
+}
+
+#leftSide p{
+    padding: 40px;
+}
+#rightSide p{
+    padding: 40px
+}
+
+#part2{
+    background-color:rgb(30,144,255);
+}
+
+.headercontainer{
+    background-color: #383838;
+}
+
+.fs-4{
+    color: white;
+}
+
+#slogancontainer{
+    background-image: url("../img/trophy.jpg");
+    background-size: 100% 100%;
     display: flex;
+   justify-content: center;
+   align-items: center;
+    padding: 4%;
+    min-height: 250px;
+    max-height: 425px;
+    text-shadow: 2px 2px black;
+    border: solid 5px white;
+    height: auto;
+}
+
+#slogan{
+    border-right: solid 7px white;
+    border-left: solid 7px white;
+    min-width: 20%;
+    font-size: xx-large;
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: center;
 
 }
+
+#productvision{
+    padding-left: 850px;
+    font-size: x-large;
+}
+
+.Featuresleft,
+.Featuresright{
+    background-color: rgb(30,144,255);
+    display: flex;
+    height: 250px;
+}
+
 
 #ProductFeaturesTitle{
     background-color: rgb(30,144,255);
     align-items: center;
-   color: #383838;
     text-align: center;
- 
-
-   
 }
 
 #PitchContainer{
     background-color:rgb(30,144,255);
     text-align: center;
     vertical-align: middle;
-    height: 75px;
-    padding-top: 1%;
-    padding-top: 1%;
-    color: #383838;
-
-    
-  
+    height: 250px;
+    padding-bottom: 20px;
 }
 
 #bios{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   background-color:rgb(30,144,255);
-
-
 }
 
 #devTeam{
@@ -298,5 +296,17 @@ ul{
    background-color:rgb(30,144,255);
    padding-bottom: 1%;
    padding-top: 1%;
-   color: #383838;
+}
+
+#kaltura{
+    color: black;
+    font-size: large;
+}
+
+#kaltura a{
+    color: red;
+}
+
+#Interviews{
+    color: white;
 }
