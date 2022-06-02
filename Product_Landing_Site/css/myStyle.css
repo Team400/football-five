@@ -6,6 +6,10 @@
     background-color:  rgb(30,144,255);
 }
 
+html{
+    background-color: rgb(30,144,255);
+}
+
 h1{
     font-size: 50px;
     padding-top: 100px;
@@ -19,6 +23,7 @@ ul{
     padding-left: 100px;
     padding-right: 100px;
 }
+
 
 #devTeam{
     padding-top: 100px;
@@ -150,9 +155,12 @@ ul{
 
 #Home{
     font-weight: bold;
+    color: white;
 }
-#Interviews{
+
+#DesignArtifacts{
     font-weight: bold;
+    color: white;
 }
 
   
@@ -312,20 +320,15 @@ ul{
     color: red;
 }
 
-#Interviews{
-    color: white;
-}
-
 
 #artifactcontainer{
     display: flex;
     text-shadow: 2px 2px black;
     border: solid 10px white; 
+}
 
-    
-  
-
-
+#artifactcontainer a{
+    color: white;
 }
 
 #vertdirectory{
@@ -339,4 +342,12 @@ ul{
     padding: 1%;
 
 
+}
+
+
+#interviewDiv,
+#interviewNotes
+{
+    align-content: center;
+    flex-direction: column;
 }
