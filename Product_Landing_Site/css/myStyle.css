@@ -165,7 +165,7 @@ ul{
         padding-top: 1%;
     padding-bottom: 1%;
     font-size: larger;
-    height: 250px;
+     
     max-width: 100%;
     border: solid white 2px;
     border-top: none;
@@ -179,7 +179,7 @@ ul{
    background-color:  #383838;
    padding: 5%;
    font-size: x-large;
-   height: 250px;
+
    max-width: 100%;
    border: solid white 2px;
    border-top: none;
@@ -314,4 +314,29 @@ ul{
 
 #Interviews{
     color: white;
+}
+
+
+#artifactcontainer{
+    display: flex;
+    text-shadow: 2px 2px black;
+    border: solid 10px white; 
+
+    
+  
+
+
+}
+
+#vertdirectory{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.list{
+    display: flex;
+    padding: 1%;
+
+
 }
