@@ -351,3 +351,12 @@ ul{
     align-content: center;
     flex-direction: column;
 }
+
+.personas-header
+{
+	color: white;
+}
+#personas
+{
+    background: linear-gradient(to bottom, rgb(30,144,255) 0%,rgb(30,144,255) 50%, black 50%,black 100%);
+}
