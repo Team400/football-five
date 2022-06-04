@@ -360,3 +360,10 @@ ul{
 {
     background: linear-gradient(to bottom, rgb(30,144,255) 0%,rgb(30,144,255) 50%, black 50%,black 100%);
 }
+
+#UserStoryDiv,
+#UserStoryNotes
+{
+    align-content: center;
+    flex-direction: column;
+}
