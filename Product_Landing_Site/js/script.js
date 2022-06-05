@@ -15,5 +15,4 @@ function animate(obj)
         if (i === obj.length)
             clearInterval(timer);
     }
-
 }

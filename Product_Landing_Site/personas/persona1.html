@@ -1,85 +1,60 @@
 <!DOCTYPE html>
+
+<html>
+
     <head>
-        <title>Persona 1</title>
-        <link rel="stylesheet" href="../css/myStyle.css"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        
+        <title>Benjamin</title>
+        <link rel="stylesheet"  href="../css/myStyle.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     </head>
-    
-    
-    <body onload="doThat('These are our inspirations')">
 
-        <div class="container-fluid" style="background-color:rgb(30,144,255)">
-            <div id="header" class="rounded row personas-header justify-content-center" style="background-color:black" column-height="200px" >
-            
-            </div>
+    <body onload="animate('Persona: Benjamin')">
+        <div id='wrapper'>
+             
+         <div class="headercontainer">
+             <header class="d-flex flex-wrap justify-content-center py-3 ">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-4"><img src="../img/Team400Logo.png" height=65px width=65px> Team 400's: FantasyMax <img src="../img/max.png" height=50px width=55px>  </span>
+          </a>
+
+            <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../index.html" id="Home" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="../DesignArtifacts.html" id="DesignArtifacts" class="nav-link active" >Design Artifacts</a></li>
+
+            </ul>
+         </header>
         </div>
 
-        <div class="w-25 p3">
-            
+        <div id="artifactcontainer">
+           
+                <div id='interviewDiv' class="col-4">
+                    <h3 id="persona"><strong>Persona: Benjamin</strong></h3>
+                    <img src="../img/persona1.jpg" alt="Benjamin" width="65%">
+                </div>
 
-        </div>
+                <div id="interviewNotes" class="col-8">
+                    <p>
+                        Benjamin, age 26, is a R&D at a large catalyst corporation in Louisville. Originally from St. Louis, he
+                        moved to Louisville after graduating from college to pursue a career. He is married with no children
+                        and is currently completing his master’s in chemistry.<br /><br />
         
-        <div class="container-fluid" style="background-color:rgb(30,144,255)" height="100px" >
-            <div id="persona-1" class="row justify-content-center">
+                        His career goal is to advance in his STEM field by making a different in environmental chemistry. Very
+                        proficient in the use of software technology, one of his many hobbies includes film making and is quick
+                        to pick up on various movie editing software technology. He might use our product get back into watching college
+                        football. He hasn’t been keeping up with the sport since he left college, and he feels that Fantasy Max
+                        could be his reintroduction into fandom. He wouldn’t actively look to start a league but would be
+                        more than happy to accept an invitation.
+                    </p>
+                </div>
 
-                <br />
-                Benjamin, age 26, is an R&D at a large catalyst corporation in Louisville. Originally from St. Louis, he<br /> 
-                moved to Louisville after graduating from college to pursue a career. He is married with no children<br />
-                and currently completing his master’s in chemistry.<br /><br />
-
-                His career goal is to advance in his STEM field by making a different in environmental chemistry. Very<br />
-                proficient in the use of software technology, one of his many hobbies includes film making and is quick<br />
-                to pick up movie editing software technology. He might use our product get back into watching college<br />
-                football. He hasn’t been keeping up with sport since he left college, and he feels that Fantasy Max<br /> 
-                could be his reintroduction into fandom. He wouldn’t actively look to start a league but would be<br />
-                more than happy to accept an invitation.
-
-            </div>
-        </div>
-        <div class="container-fluid" style="background-color:rgb(30,144,255)">
-            <div id="persona-2" style="visibility: hidden" display="none"> 
-
-                <br />
-                Kylie, age 25, is a full-time engineer and small business owner for a collegiate clothing company in<br /> 
-                Lexington, KY. As a small business owner for collegiate clothing, Kylie has been able to interact with a<br /> 
-                variety of students, alumni, and fans of colleges within Division I-III of the NCAA & NAIA. Kylie has been<br /> 
-                competing in Fantasy NFL leagues since 2018. As an alumna of the University of Louisville, she has found<br />
-                a recent desire to keep up with college football. The creation of FantasyMax would allow her to be<br />
-                abreast of college football, create some investment in players, as well as compete in more fantasy<br />
-                leagues.   
-
-
-            </div>
+        
         </div>
 
-        <div id="personas" class="row justify-content-center">
 
-            <div class="col-2" style="border:1px solid red;">
-                
-            </div>
-            
-            <div class="col align-content-center align-items-center" style="border:1px solid red;">
-                <img id="persona-2" src="../img/persona2.jpg" width="175px" height="200px" onclick="load(id)"/>
-            </div>
-
-            <div class="col" style="border:1px solid red;">
-                <img id="persona-3" src="../img/persona3.jpg" width="175px%" height="200px" onclick="load(id)"/>
-            </div>
-
-            <div class="col" style="border:1px solid red;">
-                <img id="persona-4" src="../img/persona1.jpg" width="175px%" height="200px" onclick="load(id)"/>
-            </div>
-
-            <div class="col" style="border:1px solid red;" onclick="load(id)">
-                <img id="persona-5" src="../img/persona1.jpg" width="175px%" height="200px" onclick="load(id)"/>
-            </div>
-
-            <div class="col-2" style="border:1px solid red;">
-                
-            </div>
-
-        </div>
-        <script src="../js/script.js"></script>
+    </div>
+    <script src="../js/script.js"></script>
     </body>
 </html>
