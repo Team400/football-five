@@ -185,7 +185,7 @@ ul{
    align-items: center;
    text-align: center;
    background-color:  #383838;
-   padding: 5%;
+   padding: 4%;
    font-size: x-large;
 
    max-width: 100%;
@@ -268,7 +268,7 @@ ul{
 
 #productvision{
     padding-left: 50%;
-    font-size: x-large;
+    font-size: 22px;
     padding-bottom: 6%;
     padding-top: 6%;
 }
@@ -346,7 +346,7 @@ ul{
 
 
 #interviewDiv,
-#interviewNotes
+#interviewNotes, #featureTitle, #featureBreakdown
 {
     align-content: center;
     flex-direction: column;
