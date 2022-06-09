@@ -6,6 +6,18 @@
     background-color:  rgb(30,144,255);
 }
 
+#featurewrapper{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: medium;
+    background-color:  rgb(30,144,255);
+}
+
+
+
+
+
 html{
     background-color: rgb(30,144,255);
 }
@@ -186,7 +198,7 @@ ul{
    text-align: center;
    background-color:  #383838;
    padding: 4%;
-   font-size: x-large;
+
 
    max-width: 100%;
    border: solid white 2px;
@@ -352,10 +364,10 @@ ul{
     flex-direction: column;
 }
 
-#feature {
+.features {
     text-align: left;
     border-style: solid;
-    padding-left: 3px;
+    padding: 8%;
 }
 
 .personas-header
@@ -369,4 +381,12 @@ ul{
 {
     align-content: center;
     flex-direction: column;
+}
+
+
+
+
+
+#feature1,#feature2,#feature3,#feature4{
+    font-size: x-large;
 }
