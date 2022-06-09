@@ -352,10 +352,10 @@ ul{
     flex-direction: column;
 }
 
-#featureBreakdown p{
+#feature {
     text-align: left;
-    padding: 5px 5px 5px;
-    border: white;
+    border-style: solid;
+    padding-left: 3px;
 }
 
 .personas-header
