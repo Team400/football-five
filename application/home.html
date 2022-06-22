@@ -46,7 +46,7 @@
     <main >
 
 
-          <div id="sidebarcontainer" class=" d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 315px; height: 700px;">
+          <div id="sidebarcontainer" class=" d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 330px; height: 700px;">
                   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                       <img class="mb-4" src="../Product_Landing_Site/img/max.png" alt="" width="75" height="75" >
                       <span class="fs-4" style="padding: 10%;">FantasyMAX</span>
@@ -98,60 +98,61 @@
             <div class="grid">
               <div id="firstcolumn" class="col-1 bg-light"></div>
               <div id="secondcolumn" class="col-1"><h5>Team Players</h5>
-                <div class="rows">1</div>
-                <div class="rows">2</div>
-                <div class="rows">3</div>
-                <div class="rows">4</div>
-                <div class="rows">5</div>
-                <div class="rows">6</div>
-                <div class="rows">7</div>
-                <div class="rows">8</div>
-                <div class="rows">9</div>
-                <div class="rows">10</div>
+                <div id="rosterplayername1" class="rows" >1</div>
+                <div id="rosterplayername2" class="rows" >2</div>
+                <div id="rosterplayername3" class="rows" >3</div>
+                <div id="rosterplayername4" class="rows" >4</div>
+                <div id="rosterplayername5" class="rows" >5</div>
+                <div id="rosterplayername6" class="rows" >6</div>
+                <div id="rosterplayername7" class="rows" >7</div>
+                <div id="rosterplayername8" class="rows" >8</div>
+                <div id="rosterplayername9" class="rows" >9</div>
+                <div id="rosterplayername10" class="rows" >10</div>
               </div>
                
               <div id="thirdcolumn" class="col-1"><h5>Player Position</h5>
-                <div class="rows">-</div>
-                <div class="rows">-</div>
-                <div class="rows">-</div>
-                <div class="rows">-</div>
-                <div class="rows">-</div>
-                <div class="rows">-</div>
-                <div class="rows">-</div>
-                <div class="rows">-</div>
-                <div class="rows">-</div>
-                <div class="rows">-</div>
+                <div id="rosterplayerposition1" class="rows" >-</div>
+                <div id="rosterplayerposition2" class="rows" >-</div>
+                <div id="rosterplayerposition3" class="rows" >-</div>
+                <div id="rosterplayerposition4" class="rows" >-</div>
+                <div id="rosterplayerposition5" class="rows" >-</div>
+                <div id="rosterplayerposition6" class="rows" >-</div>
+                <div id="rosterplayerposition7" class="rows" >-</div>
+                <div id="rosterplayerposition8" class="rows" >-</div>
+                <div id="rosterplayerposition9" class="rows" >-</div>
+                <div id="rosterplayerposition10" class="rows" >-</div>
+
               
               </div>
               
               
-              <div id="fourthcolumn" class="col-1 bg-light"><button type="button" class="btn btn-light"  onclick="refreshRoster()">
+              <div id="fourthcolumn" class="col-1 bg-light"><button type="button" id="bttn" class="btn btn-light" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
                   <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
                   <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
                 </svg> Refresh</button></div>
               <div id="fifthcolumn" class="col-1"><h5>Waiver Players</h5>     
-                  <div class="rows">1</div>
-                  <div class="rows">2</div>
-                  <div class="rows">3</div>
-                  <div class="rows">4</div>
-                   <div class="rows">5</div>
+                  <div id="waiverplayername1" class="rows">1</div>
+                  <div id="waiverplayername2" class="rows">2</div>
+                  <div id="waiverplayername3" class="rows">3</div>
+                  <div id="waiverplayername4" class="rows">4</div>
+                  <div id="waiverplayername5" class="rows">5</div>
              </div>
               
               <div  id="sixthcolumn" class="col-1"><h5>Player Position</h5>
-                  <div class="rows">-</div>
-                  <div class="rows">-</div>
-                  <div class="rows">-</div>
-                  <div class="rows">-</div>
-                  <div class="rows">-</div>
+                  <div id="waiverposition1" >-</div>
+                  <div id="waiverposition2">-</div>
+                  <div id="waiverposition3">-</div>
+                  <div id="waiverposition4">-</div>
+                  <div id="waiverposition5">-</div>
               
               </div>
-              <div id="seventhcolumn" class="col-1 bg-light"><button type="button" class="btn btn-light"  >
+              <div id="seventhcolumn" class="col-1 bg-light"><button type="button" id="bttn2" class="btn btn-light"  >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
                   <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
                   <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
                 </svg> Refresh</button></div>
-              <div id="eighthcolumn" class="col-1 bg-light "></div>
+              <div id="eighthcolumn" class="col-1  "></div>
             </div>
 
 
