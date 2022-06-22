@@ -16,19 +16,20 @@ text-align: center;
 
 .grid{
     display: flex;
-  
-  
+
     background-color:#1e90ff;
   
    
 }
 
+#firstcolumn{
+    width: 50px;
+
+}
 
 
 
-
-#firstcolumn, #fourthcolumn ,#seventhcolumn{
-    width: 100px;
+n, #fourthcolumn ,#seventhcolumn{
     display: flex;
 
     
@@ -40,7 +41,8 @@ text-align: center;
 
 
 #secondcolumn,#thirdcolumn{
-width: 150px;
+width: 175px;
+
 
 }
 #fourthcolumn, #seventhcolumn{
@@ -53,7 +55,7 @@ width: 150px;
 
 .rows  {
     display: flex;
-    height: 5%;
+ justify-content: center;
 }
 
 
