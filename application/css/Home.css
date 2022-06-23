@@ -8,10 +8,12 @@
 }
 main{
     display: flex;
+    overflow:scroll;
+    min-height: 100vh;
 }
 
  #sidebarcontainer{
-     height:100vh;
+     height:inherit;
      border-right: solid  #383838;
  }
 
@@ -26,8 +28,8 @@ main{
                 "yt yt yt wv wv wv"
                 "first second third fourth fifth sixth";
     background-color:#1e90ff;
+    height:auto;
 }
-
 
 
 #yt{
@@ -48,9 +50,6 @@ main{
 
 #fourthcolumn{
     grid-area: third;
-    border-right: solid #383838;
-    border-bottom: solid #383838;
-    height:100%
 }
 #fifthcolum{
     grid-area: fourth;
@@ -65,7 +64,6 @@ main{
 #fifthcolumn,
 #sixthcolumn,
 #seventhcolumn{
-   border-bottom:  solid #383838;
 }
 
 h1{
@@ -101,12 +99,15 @@ width: 175px;
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+    height: 0px;
+    border-right: solid #383838;
 }
 
 
 
 .col-1{
-    width: auto!important;;
+    width: auto!important;
+    height:auto;
  
 }
 

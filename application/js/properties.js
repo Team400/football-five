@@ -113,12 +113,16 @@ function refreshRoster()
             document.getElementById("rosterplayerposition"+i).style.borderRight= "dashed white";
             document.getElementById("rosterplayerschool"+i).innerHTML = sessionStorage.getItem("player"+i+"school");
             document.getElementById("rosterplayerschool"+i).style.borderBottom = "solid white";
+
+            document.getElementById("rosterplayerschool"+i).style.height = "10%";
+            document.getElementById("rosterplayerposition"+i).style.height = "10%";
+            document.getElementById("rosterplayername"+i).style.height = "10%";
         }
     }
 
     for(let i = 1; i< 16; i++)
     {
-        if(waiverPool[i-1] !=0)
+        if(sessionStorage.getItem("waiver"+(i)+"nam") != "")
         {
             document.getElementById("waivername"+i).innerHTML = sessionStorage.getItem("waiver"+(i)+"nam");
             document.getElementById("waivername"+i).style.borderBottom= "solid white";
@@ -130,19 +134,31 @@ function refreshRoster()
 
             document.getElementById("waiverschool"+i).innerHTML = sessionStorage.getItem("waiver"+(i)+"coll");
             document.getElementById("waiverschool"+i).style.borderBottom= "solid white";    
-        }
-        else if(sessionStorage.getItem("waiver"+(i)+"nam") == "")
-        {
-            document.getElementById("waivername"+i).style.borderBottom= "none";
-            document.getElementById("waivername"+i).style.visibility = 'hidden';
-            document.getElementById("waiverposition"+i).style.visibility = 'hidden';
-            document.getElementById("waiverschool"+i).style.visibility = 'hidden';
+            document.getElementById("waiverschool"+i).style.height = "auto";
+            var height = document.getElementById("waiverschool"+i).style.height;
+            document.getElementById("waiverposition"+i).style.height = document.getElementById("waiverschool"+i).style.height;
+            document.getElementById("waivername"+i).style.height = height;
 
+            document.getElementById("waivername"+i).style.height = "10%";
+            document.getElementById("waiverschool"+i).style.height = "10%";
+            document.getElementById("waiverposition"+i).style.height = "10%";
         }
 
+    }
+
+    var right=document.getElementById('rightdiv').style.height;
+    var left=document.getElementById('leftdiv').style.height;
+    var mid = document.getElementById
+    if(left>right)
+    {
+        document.getElementById('rightdiv').style.height=left;
+    }
+    else
+    {
+        document.getElementById('leftdiv').style.height=right;
     }
  
  }
 
-module.exports = {DraftPlayer(playerNumber), addToRoster(position, name, school, rNumber, pNumber), setStorage(caseNum), function initializeWaiverStorage(), setWaiverStorage(number), changeRosterNum(newNum), show(), emptyRoster(), refreshRoster()};
+//module.exports = {DraftPlayer(playerNumber), addToRoster(position, name, school, rNumber, pNumber), setStorage(caseNum), function initializeWaiverStorage(), setWaiverStorage(number), changeRosterNum(newNum), show(), emptyRoster(), refreshRoster()};
 
