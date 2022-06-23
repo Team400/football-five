@@ -24,7 +24,9 @@ body{
     color: black;
 }
 
-
+#bar{
+    text-align: left;
+}
 .d-flex{
     display: flex!important;
     background-color: #1e90ff;

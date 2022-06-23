@@ -18,7 +18,8 @@
     
 
   </head>
-  <body >
+  <body onload="refreshRoster()">
+    <div id="wrapper" >
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -43,10 +44,9 @@
  
 </svg>
 
-    <main >
+    <main class="d-flex">
 
-
-          <div id="sidebarcontainer" class=" d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 330px; height: 700px;">
+          <div id="sidebarcontainer" class=" d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 315px;">
                   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                       <img class="mb-4" src="../Product_Landing_Site/img/max.png" alt="" width="75" height="75" >
                       <span class="fs-4" style="padding: 10%;">FantasyMAX</span>
@@ -54,25 +54,12 @@
                   <ul class="nav nav-pills flex-column mb-auto">
 
                     <li style="padding: 4%" >
-                      <a href="#" class="nav-link link-dark">
+                      <a href="#" class="nav-link link-dark" onclick="populateWaiver()">
                       <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                       Dashboard
                       </a>
                       </li >
 
-
-      <li style="padding: 4%">
-        <a href="draft.html" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-         Draft Management
-        </a>
-      </li>
-      <li style="padding: 4%">
-        <a href="Tutorial.html" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-          Tutorial-FAQs
-        </a>
-      </li>
                       <li style="padding: 4%">
                         <a href="draft.html" class="nav-link link-dark">
                           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
@@ -101,77 +88,119 @@
                       </ul>
                   </div>
             </div>
-          <div id =dashboardcol class="col bg-light">
-           Fantasy Dashboard
+          <div id =dashboardcol class="col">
+           <h1>Fantasy Dashboard</h1>
             
  
 
             
             <div class="grid">
-              <div id="firstcolumn" class="col-1 bg-light"></div>
-              <div id="secondcolumn" class="col-1"><h5>Team Players</h5>
-                <div id="rosterplayername1" class="rows" >1</div>
-                <div id="rosterplayername2" class="rows" >2</div>
-                <div id="rosterplayername3" class="rows" >3</div>
-                <div id="rosterplayername4" class="rows" >4</div>
-                <div id="rosterplayername5" class="rows" >5</div>
-                <div id="rosterplayername6" class="rows" >6</div>
-                <div id="rosterplayername7" class="rows" >7</div>
-                <div id="rosterplayername8" class="rows" >8</div>
-                <div id="rosterplayername9" class="rows" >9</div>
-                <div id="rosterplayername10" class="rows" >10</div>
+              <h2 id="yt">YOUR TEAM</h2>
+              <div id="secondcolumn" class="col-1"><h5 id="tp">Player</h5>
+                <div id="rosterplayername1" class="rows players" ></div>
+                <div id="rosterplayername2" class="rows players" ></div>
+                <div id="rosterplayername3" class="rows players" ></div>
+                <div id="rosterplayername4" class="rows players" ></div>
+                <div id="rosterplayername5" class="rows players" ></div>
+                <div id="rosterplayername6" class="rows players" ></div>
+                <div id="rosterplayername7" class="rows players" ></div>
+                <div id="rosterplayername8" class="rows players" ></div>
+                <div id="rosterplayername9" class="rows players" ></div>
+                <div id="rosterplayername10" class="rows players" ></div>
               </div>
                
-              <div id="thirdcolumn" class="col-1"><h5>Player Position</h5>
-                <div id="rosterplayerposition1" class="rows" >-</div>
-                <div id="rosterplayerposition2" class="rows" >-</div>
-                <div id="rosterplayerposition3" class="rows" >-</div>
-                <div id="rosterplayerposition4" class="rows" >-</div>
-                <div id="rosterplayerposition5" class="rows" >-</div>
-                <div id="rosterplayerposition6" class="rows" >-</div>
-                <div id="rosterplayerposition7" class="rows" >-</div>
-                <div id="rosterplayerposition8" class="rows" >-</div>
-                <div id="rosterplayerposition9" class="rows" >-</div>
-                <div id="rosterplayerposition10" class="rows" >-</div>
-
+              <div id="thirdcolumn" class="col-1"><h5 id="pp">Position</h5>
+                <div id="rosterplayerposition1" class="rows positions" ></div>
+                <div id="rosterplayerposition2" class="rows positions" ></div>
+                <div id="rosterplayerposition3" class="rows positions" ></div>
+                <div id="rosterplayerposition4" class="rows positions" ></div>
+                <div id="rosterplayerposition5" class="rows positions" ></div>
+                <div id="rosterplayerposition6" class="rows positions" ></div>
+                <div id="rosterplayerposition7" class="rows positions" ></div>
+                <div id="rosterplayerposition8" class="rows positions" ></div>
+                <div id="rosterplayerposition9" class="rows positions" ></div>
+                <div id="rosterplayerposition10" class="rows positions" ></div>
+              </div>              
               
+              <div id="fourthcolumn" class="col-1"><h5 id="ps">School</h5>
+                <div id="rosterplayerschool1" class="rows schools" ></div>
+                <div id="rosterplayerschool2" class="rows schools" ></div>
+                <div id="rosterplayerschool3" class="rows schools" ></div>
+                <div id="rosterplayerschool4" class="rows schools" ></div>
+                <div id="rosterplayerschool5" class="rows schools" ></div>
+                <div id="rosterplayerschool6" class="rows schools" ></div>
+                <div id="rosterplayerschool7" class="rows schools" ></div>
+                <div id="rosterplayerschool8" class="rows schools" ></div>
+                <div id="rosterplayerschool9" class="rows schools" ></div>
+                <div id="rosterplayerschool10" class="rows schools" ></div>
               </div>
               
               
-              <div id="fourthcolumn" class="col-1 bg-light"><button type="button" id="bttn" class="btn btn-light" >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                  <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                  <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                </svg> Refresh</button></div>
-              <div id="fifthcolumn" class="col-1"><h5>Waiver Players</h5>     
-                  <div id="waiverplayername1" class="rows">1</div>
-                  <div id="waiverplayername2" class="rows">2</div>
-                  <div id="waiverplayername3" class="rows">3</div>
-                  <div id="waiverplayername4" class="rows">4</div>
-                  <div id="waiverplayername5" class="rows">5</div>
+              
+              <h2 id="wv">WAIVER WIRE</h2>
+              <div id="fifthcolumn" class="col-1"><h5 id = "wp">Name</h5>     
+                <div id="waivername1" class="rows wp"></div>
+                <div id="waivername2" class="rows wp"></div>
+                <div id="waivername3" class="rows wp"></div>
+                <div id="waivername4" class="rows wp"></div>
+                <div id="waivername5" class="rows wp"></div>
+                <div id="waivername6" class="rows wp"></div>
+                <div id="waivername7" class="rows wp"></div>
+                <div id="waivername8" class="rows wp"></div>
+                <div id="waivername9" class="rows wp"></div>
+                <div id="waivername10" class="rows wp"></div>
+                <div id="waivername11" class="rows wp"></div>
+                <div id="waivername12" class="rows wp"></div>
+                <div id="waivername13" class="rows wp"></div>
+                <div id="waivername14" class="rows wp"></div>
+                <div id="waivername15" class="rows wp"></div>
              </div>
               
-              <div  id="sixthcolumn" class="col-1"><h5>Player Position</h5>
-                  <div id="waiverposition1" >-</div>
-                  <div id="waiverposition2">-</div>
-                  <div id="waiverposition3">-</div>
-                  <div id="waiverposition4">-</div>
-                  <div id="waiverposition5">-</div>
+              <div  id="sixthcolumn" class="col-1"><h5 id="wpp">Position</h5>
+                <div id="waiverposition1" class="rows wpp"></div>
+                <div id="waiverposition2" class="rows wpp"></div>
+                <div id="waiverposition3" class="rows wpp"></div>
+                <div id="waiverposition4" class="rows wpp"></div>
+                <div id="waiverposition5" class="rows wpp"></div>
+                <div id="waiverposition6" class="rows wpp"></div>
+                <div id="waiverposition7" class="rows wpp"></div>
+                <div id="waiverposition8" class="rows wpp"></div>
+                <div id="waiverposition9" class="rows wpp"></div>
+                <div id="waiverposition10" class="rows wpp"></div>
+                <div id="waiverposition11" class="rows wpp"></div>
+                <div id="waiverposition12" class="rows wpp"></div>
+                <div id="waiverposition13" class="rows wpp"></div>
+                <div id="waiverposition14" class="rows wpp"></div>
+                <div id="waiverposition15" class="rows wpp"></div>
               
               </div>
-              <div id="seventhcolumn" class="col-1 bg-light"><button type="button" id="bttn2" class="btn btn-light"  >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                  <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                  <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                </svg> Refresh</button></div>
-              <div id="eighthcolumn" class="col-1  "></div>
+              <div  id="seventhcolumn" class="col-1"><h5 id="ws">School</h5>
+                <div id="waiverschool1" class="rows ws"></div>
+                <div id="waiverschool2" class="rows ws"></div>
+                <div id="waiverschool3" class="rows ws"></div>
+                <div id="waiverschool4" class="rows ws"></div>
+                <div id="waiverschool5" class="rows ws"></div>
+                <div id="waiverschool6" class="rows ws"></div>
+                <div id="waiverschool7" class="rows ws"></div>
+                <div id="waiverschool8" class="rows ws"></div>
+                <div id="waiverschool9" class="rows ws"></div>
+                <div id="waiverschool10" class="rows ws"></div>
+                <div id="waiverschool11" class="rows ws"></div>
+                <div id="waiverschool12" class="rows ws"></div>
+                <div id="waiverschool13" class="rows ws"></div>
+                <div id="waiverschool14" class="rows ws"></div>
+                <div id="waiverschool15" class="rows ws"></div>
             </div>
 
+            </div>
 
           </div>
 
     
     </main>
+  </div>
   </body>
   <script src='js/properties.js'></script>
 </html>
+
+
