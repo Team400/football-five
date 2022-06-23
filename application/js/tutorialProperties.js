@@ -56,3 +56,5 @@ function understandNext() {
 function ready() {
     window.location.href = "../application/home.html";
 }
+
+module.exports = {newPage(), name(), testName(),understandNext(), ready()};
