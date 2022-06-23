@@ -52,7 +52,7 @@
         <ul class="nav nav-pills flex-column mb-auto">
 
         <li style="padding: 4%" >
-        <a href="#" class="nav-link link-dark">
+        <a href="home.html" class="nav-link link-dark">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
           Dashboard
         </a>
@@ -92,8 +92,8 @@
     </div>
     <div id="content">
         <h1>Welcome to FantasyMax!</h1>
-        <br>
-        <h3 id="firsttimer" onclick="newPage()"> First time user? Click here!</h3>
+        <hr>
+        <h3 id="firsttimer" onclick="newPage()"><u>First time user? Click here!</u></h3>
         <p id="firstinfo">
             Using FantasyMax is simple! Just follow along with the steps below!<br><br>
             <strong id="nameCreator" onclick="name()"><u>Step 1:</u></strong> Create a team name.<br>
@@ -102,11 +102,14 @@
             <button id="createName" onclick="testName()">Set the Team Name!</button><br>
             <p id="draftingStep">Next Step: You will select players from your league's draft. Once your team name 
             is up, select from players that are available.</p>
-            <button id="understand" onclick="">Got it, next step!</button>
+            <button id="understand" onclick="understandNext()">Got it, next step!</button><br>
             <p id="lastStep">Last Step: You will track your players and ensure you're creating the best opportunities to win for the week.<br>
             Got it? You ready to start?<br></p>
-            <button id="ready" onclick="">Understood, take me to the Dashboard!</button>
+            <button id="ready" onclick="ready()">Understood, take me to the Dashboard!</button>
         </p>
+    </div>
+    <div id="FAQimage">
+      <img src="../application/img/Logo.png" alt="fantasy football logo">
     </div>
     </main>
 

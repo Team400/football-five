@@ -7,7 +7,13 @@ nameFiller.style.display = "none";
 nameBtn = document.getElementById("createName");
 nameBtn.style.display = "none";
 drafting = document.getElementById("draftingStep");
-
+drafting.style.display = "none";
+understandBtn = document.getElementById("understand");
+understandBtn.style.display = "none";
+lastStep = document.getElementById("lastStep");
+lastStep.style.display = "none";
+readyBtn = document.getElementById("ready");
+readyBtn.style.display = "none";
 
 function newPage () {
     if (document.body.click) {
@@ -17,12 +23,10 @@ function newPage () {
         myFirst.style.display = "block";
         info.style.display = "none";
     }
-
 }
 
 function name() {
     if (document.body.click) {
-        createName.style.display = "none";
         nameFiller.style.display = "block";
         nameBtn.style.display = "block";
     } else {
@@ -39,5 +43,16 @@ function testName() {
         
     } else {
         alert("This name is good!");
+        drafting.style.display = "block";
+        understandBtn.style.display = "block";
     }
+}
+
+function understandNext() {
+    lastStep.style.display = "block";
+    readyBtn.style.display ="block";
+}
+
+function ready() {
+    window.location.href = "../application/home.html";
 }

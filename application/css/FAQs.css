@@ -12,9 +12,14 @@ main{
 
 }
 
+#FAQimage {
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+
+}
 
 button {
-    padding: 5px;
     background-color: white;
     color: rgb(30, 144, 255);
     border-radius: 5px;

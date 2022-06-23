@@ -1,11 +1,74 @@
+body{
+    background-color:  #1e90ff;
+   
+  
+}
 main{
     display: flex;
 }
 
-#content {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    justify-content: center;
-    align-self: baseline;
-    background-color: rgb(30,144,255);
+#dashboardcol{
+font-size: xx-large;
+text-align: center;
+
     
+}
+
+.grid{
+    display: flex;
+
+    background-color:#1e90ff;
+  
+   
+}
+
+#firstcolumn{
+    width: 50px;
+
+}
+
+
+
+n, #fourthcolumn ,#seventhcolumn{
+    display: flex;
+
+    
+}
+ #fifthcolumn, #sixthcolumn{
+    width: 150px;
+
+}
+
+
+#secondcolumn,#thirdcolumn{
+width: 175px;
+
+
+}
+#fourthcolumn, #seventhcolumn{
+ 
+    padding-left: 2%;
+    padding-top: 10%;
+    padding-bottom: 50%;
+    padding-right: 12%;
+}
+
+.rows  {
+    display: flex;
+ justify-content: center;
+}
+
+
+
+.col-1{
+    min-width:  50px;
+ 
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ background-color: #1e90ff;
+
 }
