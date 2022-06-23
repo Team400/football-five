@@ -5,12 +5,16 @@ let waiverPool = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 let waivercounter=1;
 
 function DraftPlayer(playerNumber)
-{
-    rosterNumber++;
-    let element = document.getElementById("player" + playerNumber);
+{  
     show();
+    rosterCheck(playerNumber);
+}
+
+function rosterCheck(playerNumber) {
+    rosterNumber++;
     if(rosterNumber<11)
     {
+        var element = document.getElementById("player" + playerNumber);
         var P = document.getElementById("position"+playerNumber);
         var position = P.innerHTML;
         var N = document.getElementById("name"+playerNumber);
@@ -27,7 +31,6 @@ function DraftPlayer(playerNumber)
     {
         alert("Your roster is full!");
     }
-
 }
 
 
@@ -161,4 +164,4 @@ function refreshRoster()
  }
 
 //module.exports = {DraftPlayer(playerNumber), addToRoster(position, name, school, rNumber, pNumber), setStorage(caseNum), function initializeWaiverStorage(), setWaiverStorage(number), changeRosterNum(newNum), show(), emptyRoster(), refreshRoster()};
-
+module.exports = {rosterCheck, setStorage}
