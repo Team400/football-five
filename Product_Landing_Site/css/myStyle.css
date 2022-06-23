@@ -6,6 +6,18 @@
     background-color:  rgb(30,144,255);
 }
 
+#featurewrapper{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: medium;
+    background-color:  rgb(30,144,255);
+}
+
+
+
+
+
 html{
     background-color: rgb(30,144,255);
 }
@@ -186,7 +198,7 @@ ul{
    text-align: center;
    background-color:  #383838;
    padding: 4%;
-   font-size: x-large;
+
 
    max-width: 100%;
    border: solid white 2px;
@@ -323,7 +335,7 @@ ul{
 
 #artifactcontainer{
     display: flex;
-    text-shadow: 2px 2px black;
+    color: white;
     border: solid 10px white; 
 }
 
@@ -352,18 +364,29 @@ ul{
     flex-direction: column;
 }
 
+.features {
+    text-align: left;
+    border-style: solid;
+    padding: 8%;
+}
+
 .personas-header
 {
 	color: white;
 }
-#personas
-{
-    background: linear-gradient(to bottom, rgb(30,144,255) 0%,rgb(30,144,255) 50%, black 50%,black 100%);
-}
+
 
 #UserStoryDiv,
 #UserStoryNotes
 {
     align-content: center;
     flex-direction: column;
+}
+
+
+
+
+
+#feature1,#feature2,#feature3,#feature4{
+    font-size: x-large;
 }

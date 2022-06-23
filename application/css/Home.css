@@ -1,0 +1,120 @@
+#wrapper{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    background-color:  #1e90ff;
+    min-height: 100vh;
+    width: 100vw;
+}
+main{
+    display: flex;
+    overflow:scroll;
+    min-height: 100vh;
+}
+
+ #sidebarcontainer{
+     height:inherit;
+     border-right: solid  #383838;
+ }
+
+#dashboardcol{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+                "yt yt yt wv wv wv"
+                "first second third fourth fifth sixth";
+    background-color:#1e90ff;
+    height:auto;
+}
+
+
+#yt{
+    grid-area: yt;
+    border-right: solid #1e90ff;
+}
+
+#wv{
+    grid-area: wv;
+}
+
+#secondcolumn{
+    grid-area: first;
+}
+#thirdcolumn{
+    grid-area: second;
+}
+
+#fourthcolumn{
+    grid-area: third;
+}
+#fifthcolum{
+    grid-area: fourth;
+}
+#sixthcolumn{
+    grid-area: fifth;
+}
+
+#secondcolumn,
+#thirdcolumn,
+#fourthcolumn,
+#fifthcolumn,
+#sixthcolumn,
+#seventhcolumn{
+}
+
+h1{
+    background-color: #383838;
+    color:white;
+    height: 75px;
+}
+
+h2{
+    background-color: #383838;
+    color:white;
+}
+
+h5{
+    padding-right: 10px;
+    border-bottom:  solid #383838;
+}
+
+
+#fifthcolumn, 
+#sixthcolumn{
+    width: 150px;
+}
+
+
+#secondcolumn,#thirdcolumn{
+width: 175px;
+}
+
+
+.rows  {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 0px;
+    border-right: solid #383838;
+}
+
+
+
+.col-1{
+    width: auto!important;
+    height:auto;
+ 
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ background-color: #1e90ff;
+
+}

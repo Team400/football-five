@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<hmtl>
+
+    <head>
+        <title>Architectural Design</title>
+        <link rel="stylesheet"  href="../Product_Landing_Site/css/myStyle.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <div id='wrapper'>
+             
+         <div class="headercontainer">
+             <header class="d-flex flex-wrap justify-content-center py-3 ">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-4"><img src="../Product_Landing_Site/img/Team400Logo.png" height=65px width=65px> Team 400's: FantasyMax <img src="../Product_Landing_Site/img/max.png" height=50px width=55px>  </span>
+          </a>
+
+            <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../Product_Landing_Site/index.html" id="Home" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="../Product_Landing_Site/DesignArtifacts.html" id="DesignArtifacts" class="nav-link" >Design Artifacts</a></li>
+            <li class="nav-item"><a href="#" id="DesignArtifacts" class="nav-link active">Architectural Design</a></li>
+
+            </ul>
+         </header>
+         </div>
+
+         <div id="artifactcontainer">
+
+          
+
+            <div id="interviews"class="col-4">
+                <p id="slogan"><strong>Database Architecture</strong></p>
+            </div>
+
+            <div class="col-8" id="vertdirectory">
+                <!-- Frank's Interview - Ethan-->
+                <img src="../Product_Landing_Site/img/Architecture.png">
+
+            </div>
+
+          </div>
+
+        <div id="artifactcontainer">
+           
+          
+
+                <div id="personas"class="col-4">
+                    <p id="slogan"><strong>Component oraganization</strong></p>
+                </div>
+
+                <div class="col-8" id="vertdirectory">
+                    <img src="../Product_Landing_Site/img/components oraganization.png">
+                </div>
+
+        
+        </div>
+        <div id="artifactcontainer">
+           
+          
+            <div id="personas"class="col-4">
+                <p id="slogan"><strong>Distribution Architecture</strong></p>
+            </div>
+
+            <div class="col-8" id="vertdirectory">
+                <img src="../Product_Landing_Site/img/Distribution Architecture.png">
+            </div>
+
+    
+         </div>
+
+
+        </div>
+        <div id="artifactcontainer">
+        <div id="interviews"class="col-4">
+            <p id="slogan"><strong>Security</strong></p>
+        </div>
+
+        <div class="col-8" id="vertdirectory">
+            <!-- Frank's Interview - Ethan-->
+            <p id="interview1"><li class="list">Our design addresses security with a focus on authentication and authorization. To ensure each user is given access to the proper information (which will be confirmed through access control lists), we intend to design our authentication and authorization based on a login system that will allow for a second factor of authentication (offered through phone numbers or federated identity). The two-factor authentication will protect users from their credentials being used in some malice way by an intruder. The two-factor authentication will also protect the system from possible brute force attacks and session hijacking attacks. With the login component at the user interface management level and the authentication & authorization component at the integrated services, the two can work together to ensure users are protected. Another way to keep our users safe will be through encryption of traffic at an application level which will also protect against session hijacking attacks. </li>
+
+        </div>
+        </div>
+
+        <div id="artifactcontainer">
+            <div id="interviews"class="col-4">
+                <p id="slogan"><strong>Cross-cutting concerns</strong></p>
+            </div>
+    
+            <div class="col-8" id="vertdirectory">
+                <!-- Frank's Interview - Ethan-->
+                <p id="interview1"><li class="list">Cross-cutting concerns are addressed in our design based on each aspect of the layers having some responsibility in maintaining an acceptable level of security through authentication and authorization (within the user interface management & integrated services layers), validation and management of queries (within the user interface management & basic services layers), and input validation (within the user interface layer). Performance and reliability can then be improved because each layer has some responsibility for the upkeep of FantasyMax. </li>
+    
+            </div>
+            </div>
+
+            <div id="artifactcontainer">
+                <div id="interviews"class="col-4">
+                    <p id="slogan"><strong>Seperations of Concerns</strong></p>
+                </div>
+        
+                <div class="col-8" id="vertdirectory">
+                    <!-- Frank's Interview - Ethan-->
+                    <p id="interview1"><li class="list">We address separation of concerns by using components that each do one thing and one thing only, along with a layered architecture, with layers of components of related functionality. For example, each component in our Application Services layer provides a single element of functionality that is critical to the overall function of the application. Together, these components provide the essential services of the application, while being structured to make them as independent as possible. In addition, none of the components in any layer is related to implementation, in adherence to the principle of separating the “what” from the “how.” </li>
+        
+                </div>
+                </div>
+
+                <div id="artifactcontainer">
+                    <div id="interviews"class="col-4">
+                        <p id="slogan"><strong>Interface Stability</strong></p>
+                    </div>
+            
+                    <div class="col-8" id="vertdirectory">
+                        <!-- Frank's Interview - Ethan-->
+                        <p id="interview1"><li class="list">We will focus on using stable interfaces, i.e., interfaces that change slowly or not at all, to reduce or eliminate the need for changing components that use these interfaces.</li>
+            
+                    </div>
+                    </div>
+                    <div id="artifactcontainer">
+                        <div id="interviews"class="col-4">
+                            <p id="slogan"><strong>Avoid Duplicate Functionality</strong></p>
+                        </div>
+                
+                        <div class="col-8" id="vertdirectory">
+                            <!-- Frank's Interview - Ethan-->
+                            <p id="interview1"><li class="list">We want to avoid duplication of functionality because duplication can cause many problems down the line. Duplications makes it harder to refactor your code. We will limit components that provide similar services in our implementation. Our design will not have components that rely on the implementation of other components, this lack of implementation dependencies means that if the implementation of a component is changed during continuous integration, this change won’t require the other components that interface with it to change as well. All components will interact with each other through the API</li>
+                
+                        </div>
+                        </div>
+                        <div id="artifactcontainer">
+                            <div id="interviews"class="col-4">
+                                <p id="slogan"><strong>Technology Choices</strong></p>
+                            </div>
+                    
+                            <div class="col-8" id="vertdirectory">
+                                <!-- Frank's Interview - Ethan-->
+                                <p id="interview1"><li class="list">
+                               
+                             <p><strong>Database</strong> <br> FantasyMax will be built using relational databases using SQL. Relational databases will be best for this application because of the type of data we will be dealing with. Most of the data FantasyMax will process will be things such as player stats, team stats, schedules, etc. The data structures will be simple and predictable, thus making relational databases an easy choice. With relational databases, we can run queries easier than we could with NoSQL. The data used by FantasyMax will, for the most part, be predictable and not see much change overtime. One issue that relational databases could cause would be scaling. Scaling with relational databases is usually done by scaling up, therefore spending more on physical hardware, RAM, etc. Our developers also already have experience with SQL, so this will make it easier to implement.
+                            <br>
+                            <br>
+                            <strong>Platform</strong><br>FantasyMax will first launch as a browser-based web application. Our development team has more experience with browser-based application development than mobile-based application development. Eventually, we realize that FantasyMax will need a mobile application. So much web traffic happens through mobile devices, so FantasyMax needs to scale to mobile devices in order to reach our maximum audience. Development for browser-based applications is pretty straight forwards as well. If we can focus on delivering the best product we can on the web, we can eventually take that knowledge and create a mobile application that handles common problems for mobile devices such as: processor power (less powerful than computers), intermittent connectivity, power management (limited battery life), and on-screen keyboards (error-prone). 
+                            <br>
+                            <br>
+                            <strong>Server</strong><br>FantasyMax will utilize AWS Cloud Services. It’s really hard to go wrong with any of the big 3 cloud service providers (AWS, Microsoft Azure, or Google Cloud Services). However, we chose to use AWS for our application because they offer many tools that could help our application grow and be successful. They offer databases, analytics, security, management, and more. The services they offer set them apart for us and we decided that AWS would help maximize our application’s potential. 
+                            <br>
+                            <br>
+                            <strong>Open Source</strong><br>FantasyMax will take advantage of some opensource software. As a budding business/application, we want to deliver the best product we can without spending excess money. Utilizing opensource software was an easy decision for us, allowing us to implement some key features in our application without having to create them from scratch (which can get expensive). We plan to use MySQL as our database management system. This system is opensource and will be very useful to our application. We’ve also discussed implementing some other open source features, such as a log-in page and our payment gateway. 
+                            <br>
+                            <br>
+
+                            <strong>Development Tools</strong><br>FantasyMax has some choices that may limit our architectural choices. We plan to use a framework to create our application, and this will cause us to shift our architecture to fit the mold the framework expects. Using open-source software can also be limiting because we have no control over the evolution of opensource features we implement. Overall, I think our FantasyMax application will be simple enough where the architecture won’t be limited too much. 
+                            <br>
+                            <br>
+                            
+                            </p>
+                            </li>
+                    
+                            </div>
+                            </div>
+
+
+    </body>
+</body>
+</hmtl>
