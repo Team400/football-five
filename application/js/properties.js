@@ -99,7 +99,6 @@ function emptyRoster()
   initializeWaiverStorage();
 }
 
-
 function refreshRoster()
 {
     
@@ -164,4 +163,4 @@ function refreshRoster()
  }
 
 //module.exports = {DraftPlayer(playerNumber), addToRoster(position, name, school, rNumber, pNumber), setStorage(caseNum), function initializeWaiverStorage(), setWaiverStorage(number), changeRosterNum(newNum), show(), emptyRoster(), refreshRoster()};
-module.exports = {rosterCheck, setStorage, changeRosterNum}
+module.exports = {rosterCheck, setStorage, changeRosterNum, emptyRoster};
