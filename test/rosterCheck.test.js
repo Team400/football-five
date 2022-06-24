@@ -3,6 +3,7 @@
  */
 
 const rewire = require('rewire');
+const { rosterCheck } = require('../application/js/properties');
 var properties = rewire("../application/js/properties");
 jest.spyOn(window, 'alert').mockImplementation(() => {});
 
