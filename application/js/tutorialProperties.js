@@ -1,3 +1,4 @@
+
 myFirst = document.getElementById("firsttimer");
 info = document.getElementById("firstinfo");
 info.style.display = "none";
@@ -25,17 +26,6 @@ function newPage () {
     }
 }
 
-function name() {
-    if (document.body.click) {
-        nameFiller.style.display = "block";
-        nameBtn.style.display = "block";
-    } else {
-        createName.style.display = "block";
-        nameFiller.style.display = "none";
-        nameBtn.style.display = "none";
-    }
-}
-
 function testName() {
     if (nameFiller.value == "Sharks") {
         nameFiller.value == "";
@@ -48,6 +38,19 @@ function testName() {
     }
 }
 
+function name() {
+    if (document.body.click) {
+        nameFiller.style.display = "block";
+        nameBtn.style.display = "block";
+    } else {
+        createName.style.display = "block";
+        nameFiller.style.display = "none";
+        nameBtn.style.display = "none";
+    }
+}
+
+
+
 function understandNext() {
     lastStep.style.display = "block";
     readyBtn.style.display ="block";
@@ -56,5 +59,4 @@ function understandNext() {
 function ready() {
     window.location.href = "../application/home.html";
 }
-
-//module.exports = {newPage(), name(), testName(),understandNext(), ready()};
+module.exports = {newPage, name, testName, understandNext, ready};
