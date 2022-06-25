@@ -4,7 +4,7 @@
   "description": "",
   "main": "rosterCheck.test.js",
   "scripts": {
-    "test": "jest --env=jsdom"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +17,10 @@
     "babel-plugin-rewire": "^1.2.0",
     "esm": "^3.2.25",
     "express": "^4.18.1",
+    "jquery": "^3.6.0",
     "jsdom": "^19.0.0",
     "require": "^0.4.4",
-    "rewire": "^6.0.0"
+    "rewire": "^6.0.0",
+    "uglify-js": "^3.16.1"
   }
 }
