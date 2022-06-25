@@ -99,7 +99,7 @@ function emptyRoster()
 
 function refreshRoster()
 {
-    
+    alert("Hint: click on a player's name to access their stats and news!");
     for(let i = 1; i<11; i++)
     {
         if((sessionStorage.getItem("player"+i+"nam")) !== null)
@@ -113,6 +113,9 @@ function refreshRoster()
             document.getElementById("rosterplayerposition"+i).style.borderRight= "dashed white";
             document.getElementById("rosterplayerschool"+i).innerHTML = sessionStorage.getItem("player"+i+"school");
             document.getElementById("rosterplayerschool"+i).style.borderBottom = "solid white";
+
+            document.getElementById("rosterplayername"+i).addEventListener("click", function(){ alert("This area will show some player stats and recent news!"); });
+
 
             document.getElementById("rosterplayerschool"+i).style.height = "10%";
             document.getElementById("rosterplayerposition"+i).style.height = "10%";
@@ -138,6 +141,9 @@ function refreshRoster()
             var height = document.getElementById("waiverschool"+i).style.height;
             document.getElementById("waiverposition"+i).style.height = document.getElementById("waiverschool"+i).style.height;
             document.getElementById("waivername"+i).style.height = height;
+
+
+            document.getElementById("waivername"+i).addEventListener("click", function(){ alert("This area will show some player stats and recent news!"); });
 
             document.getElementById("waivername"+i).style.height = "10%";
             document.getElementById("waiverschool"+i).style.height = "10%";
