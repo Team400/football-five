@@ -71,6 +71,12 @@
           Tutorial-FAQs
         </a>
         </li>
+        <li style="padding: 4%">
+          <a href="aboutTesting.html" class="nav-link link-dark">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          About Testing
+        </a>
+        </li>
 
         </ul>
         
@@ -91,18 +97,20 @@
         
     </div>
     <div id="content">
-        <h1>About Testing</h1>
-        <!-- <hr> -->
-        <p id="firstinfo">
-            Testing our application proved to be more challenging than expected. After reviewing some of the available frameworks, I chose Jest. Having had no prior experience with Jest, I expended considerable time and effort learning just the basics. Writing a few tests on some simple javascript functions proved to be straightforward but I enountered problems adapting Jest to communicate with our web application. What proved to be an insurmountable issue - at least insurmountable in the time avaiable - was that html document elements referred to by our javascript functions returned as undefined when the functions were imported and run in a test script - this despite running these tests in the jsdom enviroment, which is supposed to function like a browser. 
+        <h1 style="text-align:center;">About Testing</h1>
+        <hr>
+        <p id="firstinfo" style="padding-left:10px; padding-right:10px;">
+            Testing our application proved to be more challenging than expected. After reviewing some of the available frameworks, I chose Jest. Having had no prior experience with Jest, I expended considerable time and effort learning just the basics. Writing a few tests on some simple javascript functions proved to be straightforward but I enountered problems adapting Jest to communicate with our web application. What proved to be an insurmountable issue - at least insurmountable in the time available - was that html document elements referred to by our javascript functions returned as undefined when the functions were imported and run in a test script - this despite running these tests in the jsdom enviroment, which is supposed to function like a browser. 
 
-<br/> <br/> With information gleaned from extensive searching on the web, I found a way for our functions to access our html elements - by reading our html pages into a test using the JSDOM fromFile function. This approach may have ultimately been successful. At the time of this writing, all that was needed was successfully implementing a button click in Jest to trigger function calls. 
+            <br/> <br/> With information gleaned from extensive searching on the web, I found a way for our functions to access our html elements - by reading our html pages into a test using the JSDOM fromFile function. This approach may have ultimately been successful. At the time of this writing, all that was needed was successfully implementing a button click in Jest to trigger function calls. 
 
-<br/> <br/> It was possible to successfully test a few functions that did not involve any references to the DOM. They are presented in the accompanying video. Unfortunately, however, for all but one of these, it was necessary to temporarily remove (by commenting them out) some statements from the javascript file, statements that made reference to the DOM - proof of concept but of course unacceptable for actual testing. 
+            <br/> <br/> It was possible to successfully test a few functions that did not involve any references to the DOM. They are presented in the accompanying video. Unfortunately, however, for all but one of these, it was necessary to temporarily remove (by commenting them out) some statements from the javascript file, statements that made reference to the DOM - proof of concept but of course unacceptable for actual testing. 
 
-<br/> <br/> This exercise taught me a great deal about automated testing but I have only scratched the surface of what is possible. I now have a good foundation of knowledge on which to build if and when I am called upon to implement more sophisticated testing in a future role. 
+            <br/> <br/> This exercise taught me a great deal about automated testing but I have only scratched the surface of what is possible. I now have a good foundation of knowledge on which to build if and when I am called upon to implement more sophisticated testing in a future role. 
 
-<br/> <br/> Note: for running the tests that were written for this assignment, clone https://github/Team400/football-five.git and checkout the LS branch. Tests can be run from the CLI in the test directory with the following command: npm test.
+            <br/> <br/> Note: for running the tests that were written for this assignment, clone <a href="https://github/Team400/football-five.git" style="color:black;">https://github/Team400/football-five.git</a> and checkout the LS branch. Tests can be run from the CLI in the test directory with <code  style="color:black;">npm test</code>.
+
+            <br/> <br/> Larry Schoch
 
         </p>
 
