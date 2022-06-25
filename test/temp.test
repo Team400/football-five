@@ -1,0 +1,30 @@
+const {TextEncoder, TextDecoder} = require('util');
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
+const { JSDOM } = require('jsdom');
+
+//const $ = require( "jquery" )( window );
+var $ = require('jquery');
+
+//const properties = require('../application/js/properties');
+
+describe("draft", function() {
+  let jsdom;
+  beforeAll(async function() {
+    jsdom = await JSDOM.fromFile("../application/draft.html", {
+      resources: "usable",
+      runScripts: "dangerously"
+    });
+    await new Promise(resolve =>
+      jsdom.window.addEventListener("load", resolve)
+    );
+  });
+
+    it('simulates clicking "draftPlayer" button click', function() {
+        $('#draftPlayer').trigger('click');
+        //$('#draftPlayer').find('button').trigger('click');
+        //properties.DraftPlayer(1);
+        expect(jsdom.window.document.getElementById("numOfPlayers").innerHTML).toBe("(0/10)");
+        
+    });
+});

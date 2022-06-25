@@ -1,5 +1,5 @@
 
-/* myFirst = document.getElementById("firsttimer");
+myFirst = document.getElementById("firsttimer");
 info = document.getElementById("firstinfo");
 info.style.display = "none";
 createName = document.getElementById("nameCreator");
@@ -14,7 +14,7 @@ understandBtn.style.display = "none";
 lastStep = document.getElementById("lastStep");
 lastStep.style.display = "none";
 readyBtn = document.getElementById("ready");
-readyBtn.style.display = "none"; */
+readyBtn.style.display = "none";
 
 function newPage () {
     if (document.body.click) {
@@ -58,4 +58,4 @@ function understandNext() {
 function ready() {
     window.location.href = "../application/home.html";
 }
-module.exports = {newPage, name, testName, understandNext, ready};
+//module.exports = {newPage, name, testName, understandNext, ready};

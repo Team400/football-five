@@ -9,8 +9,8 @@
 
  test('tests Name function with "Sharks"', () => {
    tutorialProperties.__set__('nameFiller', "Sharks");
-   expect(() => tutorialProperties.testName().toBe(""));
-   expect(() => tutorialProperties.testName.toThrow("alert is not a function"));
+   expect(() => page.window.document.getElementById("nameBuilder").innerHTML.toBe(""));
+   //expect(() => tutorialProperties.testName.toThrow("alert is not a function"));
    window.alert.mockClear();
  });
  
