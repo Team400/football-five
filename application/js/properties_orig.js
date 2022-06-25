@@ -5,16 +5,12 @@ let waiverPool = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 let waivercounter=1;
 
 function DraftPlayer(playerNumber)
-{  
-    show();
-    rosterCheck(playerNumber);
-}
-
-function rosterCheck(playerNumber) {
+{
     rosterNumber++;
+    let element = document.getElementById("player" + playerNumber);
+    show();
     if(rosterNumber<11)
     {
-        var element = document.getElementById("player" + playerNumber);
         var P = document.getElementById("position"+playerNumber);
         var position = P.innerHTML;
         var N = document.getElementById("name"+playerNumber);
@@ -31,6 +27,7 @@ function rosterCheck(playerNumber) {
     {
         alert("Your roster is full!");
     }
+
 }
 
 
@@ -99,9 +96,10 @@ function emptyRoster()
   initializeWaiverStorage();
 }
 
+
 function refreshRoster()
 {
-    alert("Hint: click on a player's name to access their stats and news!");
+    
     for(let i = 1; i<11; i++)
     {
         if((sessionStorage.getItem("player"+i+"nam")) !== null)
@@ -115,9 +113,6 @@ function refreshRoster()
             document.getElementById("rosterplayerposition"+i).style.borderRight= "dashed white";
             document.getElementById("rosterplayerschool"+i).innerHTML = sessionStorage.getItem("player"+i+"school");
             document.getElementById("rosterplayerschool"+i).style.borderBottom = "solid white";
-
-            document.getElementById("rosterplayername"+i).addEventListener("click", function(){ alert("This area will show some player stats and recent news!"); });
-
 
             document.getElementById("rosterplayerschool"+i).style.height = "10%";
             document.getElementById("rosterplayerposition"+i).style.height = "10%";
@@ -144,9 +139,6 @@ function refreshRoster()
             document.getElementById("waiverposition"+i).style.height = document.getElementById("waiverschool"+i).style.height;
             document.getElementById("waivername"+i).style.height = height;
 
-
-            document.getElementById("waivername"+i).addEventListener("click", function(){ alert("This area will show some player stats and recent news!"); });
-
             document.getElementById("waivername"+i).style.height = "10%";
             document.getElementById("waiverschool"+i).style.height = "10%";
             document.getElementById("waiverposition"+i).style.height = "10%";
@@ -169,4 +161,4 @@ function refreshRoster()
  }
 
 //module.exports = {DraftPlayer(playerNumber), addToRoster(position, name, school, rNumber, pNumber), setStorage(caseNum), function initializeWaiverStorage(), setWaiverStorage(number), changeRosterNum(newNum), show(), emptyRoster(), refreshRoster()};
-module.exports = {rosterCheck, setStorage, changeRosterNum, emptyRoster};
+

@@ -1,4 +1,5 @@
-myFirst = document.getElementById("firsttimer");
+
+/* myFirst = document.getElementById("firsttimer");
 info = document.getElementById("firstinfo");
 info.style.display = "none";
 createName = document.getElementById("nameCreator");
@@ -13,7 +14,7 @@ understandBtn.style.display = "none";
 lastStep = document.getElementById("lastStep");
 lastStep.style.display = "none";
 readyBtn = document.getElementById("ready");
-readyBtn.style.display = "none";
+readyBtn.style.display = "none"; */
 
 function newPage () {
     if (document.body.click) {
@@ -22,17 +23,6 @@ function newPage () {
     } else {
         myFirst.style.display = "block";
         info.style.display = "none";
-    }
-}
-
-function name() {
-    if (document.body.click) {
-        nameFiller.style.display = "block";
-        nameBtn.style.display = "block";
-    } else {
-        createName.style.display = "block";
-        nameFiller.style.display = "none";
-        nameBtn.style.display = "none";
     }
 }
 
@@ -48,13 +38,24 @@ function testName() {
     }
 }
 
+function name() {
+    if (document.body.click) {
+        nameFiller.style.display = "block";
+        nameBtn.style.display = "block";
+    } else {
+        createName.style.display = "block";
+        nameFiller.style.display = "none";
+        nameBtn.style.display = "none";
+    }
+}
+
 function understandNext() {
     lastStep.style.display = "block";
     readyBtn.style.display ="block";
+    return(lastStep.style.display);
 }
 
 function ready() {
     window.location.href = "../application/home.html";
 }
-
-//module.exports = {newPage(), name(), testName(),understandNext(), ready()};
+module.exports = {newPage, name, testName, understandNext, ready};

@@ -1,0 +1,24 @@
+{
+  "name": "unit-testing-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rosterCheck.test.js",
+  "scripts": {
+    "test": "jest --env=jsdom"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1"
+  },
+  "dependencies": {
+    "babel-plugin-rewire": "^1.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.18.1",
+    "jsdom": "^19.0.0",
+    "require": "^0.4.4",
+    "rewire": "^6.0.0"
+  }
+}
