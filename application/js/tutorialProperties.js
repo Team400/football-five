@@ -26,28 +26,32 @@ function newPage () {
     }
 }
 
-function testName() {
-    if (nameFiller.value == "Sharks") {
-        nameFiller.value == "";
-        alert("This team has already been created");
-        
-    } else {
-        alert("This name is good!");
-        drafting.style.display = "block";
-        understandBtn.style.display = "block";
-    }
-}
-
 function name() {
     if (document.body.click) {
         nameFiller.style.display = "block";
-        nameBtn.style.display = "block";
+        nameBtn.style.display = "block"; 
+        
     } else {
         createName.style.display = "block";
         nameFiller.style.display = "none";
         nameBtn.style.display = "none";
+        
     }
 }
+
+function testName() {
+    if (nameFiller.value == "Sharks") {
+        nameFiller.value = " ";
+        alert("This team has already been created");
+        
+    } else {
+        alert("This name is good!");
+        localStorage.setItem("setTeamName", nameFiller.value);
+        drafting.style.display = "block";
+        understandBtn.style.display = "block";    
+    }
+}
+
 
 function understandNext() {
     lastStep.style.display = "block";
@@ -57,5 +61,8 @@ function understandNext() {
 
 function ready() {
     window.location.href = "../application/home.html";
-}
+    
+}    
+
+
 //module.exports = {newPage, name, testName, understandNext, ready};
