@@ -4,6 +4,13 @@ let counter=0;
 let waiverPool = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 let waivercounter=1;
 
+
+var newName = localStorage.getItem("setTeamName");
+var officialName = document.getElementById("yt");
+
+officialName.innerHTML = newName;
+
+
 function DraftPlayer(playerNumber)
 {  
     show();
@@ -167,6 +174,8 @@ function refreshRoster()
     }
  
  }
+
+
 
 //module.exports = {DraftPlayer(playerNumber), addToRoster(position, name, school, rNumber, pNumber), setStorage(caseNum), function initializeWaiverStorage(), setWaiverStorage(number), changeRosterNum(newNum), show(), emptyRoster(), refreshRoster()};
 module.exports = {DraftPlayer, rosterCheck, setStorage, changeRosterNum, emptyRoster};
