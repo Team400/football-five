@@ -101,17 +101,13 @@
         <hr>
         <!-- <p id="firstinfo"> -->
         <p>
-            Testing our application proved to be more challenging than expected. After reviewing some of the available frameworks, I chose Jest. Having had no prior experience with Jest, I expended considerable time and effort learning the basics. Writing a few tests on some simple javascript functions proved to be straightforward but I enountered problems adapting Jest to communicate with our web application. What proved to be an insurmountable issue - at least insurmountable in the time available - was that html document elements referred to by our javascript functions returned as undefined when the functions were imported and run in a test script - this despite running these tests in the jsdom enviroment, which is supposed to function like a browser. 
+            Testing our application proved to be more challenging than expected. After reviewing some of the available frameworks, we chose Jest. Having had no prior experience with Jest, we expended considerable time and effort learning the basics. Writing a few tests on some simple javascript functions proved to be straightforward but we enountered problems adapting Jest to communicate with our web application. What proved to be an almost insurmountable issue was that html document elements referred to by our javascript functions returned as undefined when the functions were imported and run in a test script - this despite running these tests in the jsdom enviroment, which is supposed to function like a browser. 
 
-            <br/> <br/> With information gleaned from extensive searching on the web, I found a way for our functions to access our html elements - by reading our html pages into a test using the JSDOM fromFile function. This approach may have ultimately been successful. At the time of this writing, all that was needed was successfully implementing a button click in Jest to trigger function calls. 
+            <br/> <br/> After lengthy searching on the web, we eventually found a way for our functions to access our html elements - by reading our html pages into a test using the JSDOM fromFile function. After reading the html into the test file and copying the function from the js file, the tests ran without errors. A demonstration of one test is presented in the video that accompanies this site (see "Video Demo"). 
 
-            <br/> <br/> It was possible to successfully test a few functions that did not involve any references to the DOM. They are presented in the accompanying video. Unfortunately, however, for all but one of these, it was necessary to temporarily remove (by commenting them out) some statements from the javascript file, statements that made reference to the DOM - proof of concept but of course unacceptable for actual testing. 
+            <br/> <br/> This exercise taught us a great deal about automated testing and we now have a good foundation of knowledge on which to build, if and when we are called upon to implement more sophisticated testing in a future role. 
 
-            <br/> <br/> This exercise taught me a great deal about automated testing but I have only scratched the surface of what is possible. I now have a good foundation of knowledge on which to build if and when I am called upon to implement more sophisticated testing in a future role. 
-
-            <br/> <br/> Note: for running the tests that were written for this assignment, clone <a href="https://github/Team400/football-five.git" style="color:black;">https://github/Team400/football-five.git</a> and checkout the <u>LS</u> branch. Tests can be run from the CLI in the test directory with <code  style="color:black;">npm test</code>. For some of the tests to run it is necessary to temporarily comment out the first 17 lines of tutorialProperties.js.
-
-            <br/> <br/> Larry Schoch
+            <br/> <br/> Note: for running the tests that were written for this assignment, clone <a href="https://github/Team400/football-five.git" style="color:black;">https://github/Team400/football-five.git</a> and checkout the <u>LS</u> branch. Tests can be run from the test directory by typing <code  style="color:black;">npm test</code> in the command line. At the time of this writing, there are four tests in two suites.
 
         </p>
 
